@@ -5,6 +5,7 @@ console.log(myButton);
 const myOutput = document.querySelector(".access"); 
 
 
+
 // lista email di chi puo accedere
 const emailPass =["giociotta@gmail.com", "ciao@hello.it", "liberato@libero.it", "vivagesu@hotmail.it"];
 
@@ -12,6 +13,8 @@ const emailPass =["giociotta@gmail.com", "ciao@hello.it", "liberato@libero.it", 
 // Chiedo all’utente la sua email
 
 // controllo che sia nella lista di chi può accedere
+
+
 myButton.addEventListener("click",
     function(){
         let emailUser = inputEmail.value;
