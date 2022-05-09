@@ -12,16 +12,21 @@ const emailPass =["giociotta@gmail.com", "ciao@hello.it", "liberato@libero.it", 
 // Chiedo all’utente la sua email
 let emailUser = inputEmail.value;
 
+// controllo che sia nella lista di chi può accedere
 myButton.addEventListener("click",
     function(){
-        myOutput.append(emailPass [emailUser]);
+        // myOutput.append(emailPass [emailUser]);
+
+        if (emailUser !== emailPass){
+            myOutput.innerHTML = "non pui entrare"
+        }
+        else{
+            myOutput.innerHTML = "Prego, accedi pure."
+        }
+
     }
 
 )
-
-
-
-// controllo che sia nella lista di chi può accedere
 
 
 
